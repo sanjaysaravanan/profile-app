@@ -1,7 +1,5 @@
 // server.js
 //
-import path from "path";
-import express from "express";
 
 var nodemailer = require("nodemailer");
 
@@ -20,8 +18,8 @@ var mailOptions = {
   text: ""
 };
 
-// const express = require("express");
-// const path = require("path");
+const express = require("express");
+const path = require("path");
 const PORT = process.env.PORT || 4001;
 const app = express();
 const bodyParser = require("body-parser");
