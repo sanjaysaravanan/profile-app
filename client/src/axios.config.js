@@ -3,7 +3,7 @@ const CancelToken = axios.CancelToken;
 const source = CancelToken.source();
 
 const notificationInstance = axios.create({
-  baseURL: "http://localhost:4001",
+  baseURL: "http://localhost:" + process.env.PORT,
   timeout: 10000,
   cancelToken: source.token
 });

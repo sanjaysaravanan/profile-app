@@ -22,7 +22,7 @@ var mailOptions = {
 
 // const express = require("express");
 // const path = require("path");
-const PORT = process.env.HTTP_PORT || 4001;
+const PORT = process.env.PORT || 4001;
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
